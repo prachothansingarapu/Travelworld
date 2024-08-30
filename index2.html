@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .vision_container {
+            height: 520px;
+            width: 96%;
+            margin: 2%;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid lightslategray;
+        }
+
+        .image_container {
+            height: 100%;
+            width: 35%;
+            border: 1px solid darkcyan;
+            overflow: hidden;
+        }
+
+        .image_container img {
+            max-width: 100%;
+            height: 85%;
+            margin: 10% 0%;
+            animation: slideFromLeft 0.8s ease-out;
+        }
+
+        .info_container {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slider {
+            padding: 65px;
+            height: 100%;
+            width: 84.6%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            font-size: large;
+            color: white;
+            animation: slideFromTop 0.8s ease-out;
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideFromTop {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vision_container">
+        <div class="image_container"><img src="vishnu image for chrome customization.jpg" alt=""></div>
+        <div class="info_container">
+            <span class="slider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam omnis officiis
+                similique in. Iure voluptates magni dignissimos reprehenderit sequi sit autem cum unde fuga quis
+                incidunt nesciunt quod, repellendus numquam commodi vitae molestias pariatur animi placeat
+                exercitationem rem eveniet provident! Magnam itaque praesentium maiores corrupti nesciunt animi, autem
+                harum quam veritatis illo explicabo possimus dolorum veniam, tempore quo? Dolore exercitationem
+                consequatur optio accusantium? Cum deleniti officia quisquam delectus dolore facilis ab odio minima
+                pariatur beatae dicta, possimus vitae fuga excepturi, illum voluptatem molestias eos nihil asperiores
+                earum soluta alias obcaecati veniam rerum. Aliquid consectetur itaque modi, perferendis voluptatem
+                minima accusantium neque ipsam facere animi quaerat eius ratione aperiam corporis quas vel dolore labore
+                illum temporibus sunt quod nam. Tempora nemo earum culpa sunt, id architecto incidunt ad deserunt magnam
+                praesentium neque laudantium cumque commodi in minima illo assumenda blanditiis ut magni animi
+                cupiditate ratione at suscipit. Tempore nobis earum cum, neque laborum veniam ipsa delectus similique
+                totam, impedit dolor aperiam quam odio rem minima possimus deleniti? Voluptates eligendi placeat
+                similique repellendus fugiat nam consectetur quam, cupiditate obcaecati odio autem velit? Aliquam
+                laborum porro, odio consequatur esse, tenetur eaque quidem inventore non aliquid blanditiis quibusdam
+                illum dolorem officiis amet a?</span>
+        </div>
+    </div>
+</body>
+
+</html>

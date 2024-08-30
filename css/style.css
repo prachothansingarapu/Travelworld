@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #################### html element styling ################ */
+
+html{
+    font-size: 62.5%;
+    /* 16px-----100% */
+    /* 10px-----(100/16)*10 */
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+ /* #################### utility classes  ############## */
+
+ .container{
+    max-width: 1200px;
+    width:90%;
+    margin: 0 auto;
+ }
+
+.lg-heading{
+     font-size: 3.0em;
+}
+
+.md-heading{
+    font-size: 2.1rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color:#333333;
+}
+
+.text-gray{
+    color: #464646;
+}
+.bg-dark{
+    background-color: #263238;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5 0;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+    border: 2px solid darkblue;
+}
+
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #fff;
+    margin-top: 3.0rem;
+}
+.btn-secondary:hover{
+    background-color: #fcd4d8;
+}
+
+/* ################# header styling ################### */
+
+
+.header {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../img/buldings.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.navbar{
+    padding: 1rem;  
+}
+
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+   float: right; 
+   margin-top : 1rem;
+   font-size: 2rem; 
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ 
+/* ################ header-content styling ######################### */
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) */
+}
+
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: uppercase;
+}
+
+/* ################# showcase section styling ############## */
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height:350px;
+    background: #fff;
+    box-shadow: 1px 1px 20px 0px #0d0d0d45;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box , .row2 .text-box{
+    float: left;
+    width: 50%;
+} 
+.row2 .img-box , .row1 .text-box{
+    float: right;
+    width: 50%;
+} 
+
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* #################### features section  styling  ################### */
+
+.features{
+    padding: 10rem 0rem;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px #000;
+}
+
+.box{
+    width: 33.333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-1, .box-3{
+    background-color: #263238;
+    color: #ffff;
+}
+.box-2{
+    background: rgb(227,9,60);
+    background: linear-gradient(29deg, rgba(227,9,60,1) 46%, rgba(230,21,21,1) 67%);
+    color: #fff;
+}
+
+.box-wrapper::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/* ################ footer style ################### */
+
+footer{   
+    background-color: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media-link i{
+    margin: 1rem;
+}
+ /* ############### about page styleing ############## */
+
+.about{
+    padding: 5rem 0;
+}
+
+.about-heading::after{
+    content: "";
+    display:block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+/* ########## about-wrapper  sryling ############# */
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float: right;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+ 
+/* ################ number styling ############### */
+
+.number{
+    margin-top: 3rem;
+}
+
+.number1{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.number2{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.number3{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.number4{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.number h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.number p{
+    font-weight: 700;
+    padding-top: 0;
+}
+
+.number::after{
+    content:'';
+    display: block;
+    clear: both;
+}   
+
+/* ################ banner styleing ############### */
+
+.contact-me{
+    background: linear-gradient(29deg, rgba(227,9,60,1) 46%, rgba(230,21,21,1) 67%); 
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px 0px #0000003b;
+    margin-top: 3rem;
+}
+
+.banner1{
+    float: left;
+    width: 60%;
+    margin-top: 1rem;
+}
+
+.btn-cat{
+    float: right ;
+    width: 40%;
+}
+
+.center :hover{
+    color: #692e33;
+}
+
+.btn-cat{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border:4px solid #ddd;
+    padding: 0.3rem 2.5em;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+    text-align: right;
+}
+.banner1{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: i.5rem;
+}
+
+
+.banner::after{
+    content:'';
+    display: block;
+    clear: both;
+}  
+
+/* #$$$$$$$############### contact styleing ##########$$$$$$$$######## */
+
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper::after{
+    content:'';
+    display: block;
+    clear: both;
+}  
+
+.form-wrapper .company-address{
+    height: 700px;
+    background: #fff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px 0px #00000017;
+}
+
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right:1rem
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img{
+    width: 90%;
+    min-height:40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* ################### form styling ################ */
+
+.form-wrapper .form{
+    height: 700px;
+    font-size: 1.6rem;
+    background: #fff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px 0px #0000003b;
+}
+
+.form h1::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+    width:100%;
+}
+.form-wrapper .form label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form input{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after{
+    content: "*";
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding:1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ########################### media queries ##################### */
+
+@media (max-width: 500px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{             
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px #000;
+    }
+
+    .features .box-2,
+    .features .box{
+        margin-top:7rem
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+    
+    .banner1,
+    .btn-cat{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address,
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .form-wrapper .form{
+        margin-top: 5rem;
+    }
+}
+
+@media(min-width:501px) and (max-width:768px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+
+    p{
+        font-size:1.8rem;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{             
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px #000;
+    }
+
+    .features .box-2,
+    .features .box{
+        margin-top:7rem
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+    
+    .banner1,
+    .btn-cat{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address,
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .form-wrapper .form{
+        margin-top: 5rem;
+    }
+}
+
+@media(min-width: 700px) and (max-width:1200px){
+    html{
+        font-size:56.25% ;       
+    }
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+}
+
+@media(orientation: landscape) and (max-height: 500px){
+    .header{
+        height: 90vmax;
+    }
+}
+
